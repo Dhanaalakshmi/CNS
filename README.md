@@ -27,7 +27,7 @@ becomes C. To change a message back, each letter is replaced by the one three be
 ### STEP-5: Display the cipher text obtained above.
 
 
-PROGRAM :-
+## PROGRAM :-
 ```
 #include <stdio.h>
 #include <ctype.h>
@@ -59,7 +59,7 @@ return 0;
 
 
 
-OUTPUT :-
+## OUTPUT :-
 ![image](https://github.com/user-attachments/assets/5577af7a-9a01-4ce1-ae47-728ea4c25ff8)
 
 RESULT:
