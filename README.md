@@ -62,3 +62,7 @@ return 0;
 OUTPUT :-
 ![image](https://github.com/user-attachments/assets/5577af7a-9a01-4ce1-ae47-728ea4c25ff8)
 
+RESULT:
+
+THE PROGRAM IS EXECUTED SUCCESSFULLY.
+
