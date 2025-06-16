@@ -30,30 +30,25 @@ becomes C. To change a message back, each letter is replaced by the one three be
 ## PROGRAM :-
 ```
 #include <stdio.h>
-#include <ctype.h>
-void caesar_encrypt(char *text, int key) {
-for (int i = 0; text[i] != '\0'; i++) {
-if (isalpha(text[i])) {
-char base = isupper(text[i]) ? 'A' : 'a';
-text[i] = ((text[i] - base + key) % 26 + 26) % 26 + base;
-}
-}
-}
-void caesar_decrypt(char *text, int key) {
-caesar_encrypt(text, -key); // Decryption is just encryption with negative key
-}
-int main() {
-char message[1000];
-int key;
-printf("Enter the message to encrypt: ");
-fgets(message, sizeof(message), stdin);
-printf("Enter the Caesar Cipher key (an integer): ");
-scanf("%d", &key);
-caesar_encrypt(message, key);
-printf("Encrypted Message: %s", message);
-caesar_decrypt(message, key);
-printf("Decrypted Message: %s", message);
-return 0;
+#include <string.h>
+void caesarCipher(char *text, int shift) 
+{
+    for (int i = 0; text[i]; i++) 
+    {
+        if (text[i] >= 'A' && text[i] <= 'Z')
+        text[i] = ((text[i]- 'A' + shift) % 26) + 'A';
+        
+    }
+ }
+int main() 
+{
+    char text[] = "HELLO";
+    caesarCipher(text, 4);
+    printf("Encrypted Message: %s\n", text);
+    caesarCipher(text,-4);
+    printf("Decrypted Message: %s\n", text);
+    return 0;
+    
 }
 ```
 
